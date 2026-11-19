@@ -1,0 +1,224 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background: #fff5f8;
+    color: #333;
+}
+
+
+.hero {
+    text-align: center;
+    padding: 60px 20px;
+    background: linear-gradient(135deg, #f8bbd0, #fce4ec, #fff);
+}
+
+.small-title {
+    letter-spacing: 3px;
+    color: #ad1457;
+    font-size: 13px;
+    font-weight: bold;
+}
+
+.hero h1 {
+    font-size: 45px;
+    color: #880e4f;
+    margin: 15px 0;
+}
+
+.hero h2 {
+    color: #c2185b;
+    font-size: 24px;
+}
+
+.intro {
+    margin: 20px auto;
+    max-width: 500px;
+    line-height: 1.7;
+}
+
+.student {
+    margin-top: 25px;
+}
+
+.student span {
+    font-size: 28px;
+    font-weight: bold;
+    color: #880e4f;
+}
+
+.student p {
+    margin-top: 8px;
+}
+
+/* Section */
+.teachers,
+.friends {
+    padding: 45px 6%;
+}
+
+.section-title {
+    text-align: center;
+    font-size: 30px;
+    color: #ad1457;
+    margin-bottom: 35px;
+}
+
+.teacher-card {
+    background: white;
+    border-radius: 18px;
+    overflow: hidden;
+    box-shadow: 0 5px 20px rgba(173, 20, 87, 0.10);
+    transition: 0.3s;
+}
+
+.teacher-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 10px 25px rgba(173, 20, 87, 0.20);
+}
+
+.teacher-card img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    object-position: center top;
+}
+
+.info {
+    padding: 20px;
+    text-align: center;
+}
+
+.info h3 {
+    color: #880e4f;
+    font-size: 20px;
+    margin: 8px 0;
+}
+
+.info p {
+    color: #777;
+}
+
+/* Admin and Mentor Cards */
+.special {
+    max-width: 350px;
+    margin: 0 auto 30px;
+    border: 2px solid #f8bbd0;
+}
+
+.special img {
+    height: 380px;
+}
+
+.tag {
+    display: inline-block;
+    background: #fce4ec;
+    color: #ad1457;
+    padding: 6px 15px;
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+
+.teacher-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+
+.friends {
+    background: #fce4ec;
+}
+
+.friend-card {
+    max-width: 700px;
+    margin: auto;
+    text-align: center;
+    background: white;
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 0 5px 20px rgba(173, 20, 87, 0.12);
+}
+
+.friend-card img {
+    width: 100%;
+    height: auto;
+    max-height: 600px;
+    object-fit: contain;
+    border-radius: 15px;
+}
+
+.friend-card h3 {
+    color: #880e4f;
+    margin: 20px 0 10px;
+}
+
+.friend-card p {
+    color: #777;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 35px 20px;
+    background: #880e4f;
+    color: white;
+}
+
+footer h2 {
+    margin-bottom: 12px;
+}
+
+footer p {
+    margin: 7px 0;
+}
+
+
+@media (max-width: 768px) {
+
+    .hero h1 {
+        font-size: 32px;
+    }
+
+    .teacher-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 15px;
+    }
+
+    .teacher-card img {
+        height: 220px;
+    }
+
+    .special img {
+        height: 320px;
+    }
+
+    .info h3 {
+        font-size: 16px;
+    }
+
+    .section-title {
+        font-size: 24px;
+    }
+}
+
+@media (max-width: 480px) {
+
+    .teacher-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .teacher-card img {
+        height: 300px;
+    }
+
+    .special img {
+        height: 350px;
+    }
+}
