@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Bloom & Blossom - Flower Shop</title>
+
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Georgia', serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background: #fffaf8;
+    color: #443b3b;
+}
+
+/* Navigation */
+header {
+    background: #fff;
+    padding: 20px 8%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 10px #ddd;
+}
+
+.logo {
+    font-size: 28px;
+    color: #c45b7c;
+    font-weight: bold;
+}
+
+nav a {
+    text-decoration: none;
+    color: #444;
+    margin-left: 25px;
+    font-size: 16px;
+}
+
+nav a:hover {
+    color: #c45b7c;
+}
+
+/* Hero Section */
+.hero {
+    min-height: 520px;
+    background:
+    linear-gradient(rgba(0,0,0,.25),rgba(0,0,0,.25)),
+    url('https://images.unsplash.com/photo-1490750967868-88aa4486c946?auto=format&fit=crop&w=1600&q=85');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    padding: 60px 10%;
+    color: white;
+}
+
+.hero-content {
+    max-width: 550px;
+}
+
+.hero h1 {
+    font-size: 55px;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 19px;
+    line-height: 1.7;
+    margin-bottom: 30px;
+}
+
+.btn {
+    display: inline-block;
+    background: #c45b7c;
+    color: white;
+    padding: 14px 30px;
+    text-decoration: none;
+    border-radius: 30px;
+    transition: .3s;
+}
+
+.btn:hover {
+    background: #94405b;
+}
+
+/* Common Sections */
+section {
+    padding: 70px 8%;
+}
+
+.section-title {
+    text-align: center;
+    font-size: 36px;
+    color: #b64f72;
+    margin-bottom: 15px;
+}
+
+.subtitle {
+    text-align: center;
+    color: #777;
+    margin-bottom: 40px;
+}
+
+/* Products */
+.products {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 25px;
+}
+
+.card {
+    background: white;
+    border-radius: 15px;
+    overflow: hidden;
+    text-align: center;
+    box-shadow: 0 5px 18px #eadfe2;
+    transition: .3s;
+}
+
+.card:hover {
+    transform: translateY(-8px);
+}
+
+.card img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+}
+
+.card h3 {
+    margin: 18px 0 8px;
+    color: #8d465e;
+}
+
+.card p {
+    color: #777;
+    padding: 0 10px;
+}
+
+.price {
+    color: #c45b7c !important;
+    font-size: 20px;
+    font-weight: bold;
+    margin: 12px 0 20px;
+}
+
+/* About */
+.about {
+    background: #fceef1;
+    text-align: center;
+}
+
+.about p {
+    max-width: 750px;
+    margin: auto;
+    line-height: 1.9;
+    font-size: 17px;
+}
+
+/* Services */
+.services {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 25px;
+    text-align: center;
+}
+
+.service {
+    padding: 30px 15px;
+    background: white;
+    border-radius: 15px;
+    box-shadow: 0 3px 12px #eee;
+}
+
+.service span {
+    font-size: 40px;
+}
+
+.service h3 {
+    margin: 15px;
+    color: #b64f72;
+}
+
+/* Contact */
+.contact {
+    background: #fceef1;
+    text-align: center;
+}
+
+.contact p {
+    margin: 15px;
+    font-size: 17px;
+}
+
+/* Footer */
+footer {
+    background: #49383f;
+    color: white;
+    text-align: center;
+    padding: 25px;
+}
+
+footer p {
+    margin: 8px;
+}
+
+/* Responsive */
+@media(max-width: 700px) {
+    header {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    nav a {
+        margin: 7px;
+        font-size: 14px;
+    }
+
+    .hero h1 {
+        font-size: 38px;
+    }
+
+    .hero {
+        min-height: 450px;
+    }
+
+    .section-title {
+        font-size: 29px;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<!-- Header -->
+<header>
+    <div class="logo">🌸 Bloom & Blossom</div>
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#flowers">Flowers</a>
+        <a href="#about">About</a>
+        <a href="#services">Services</a>
+        <a href="#contact">Contact</a>
+    </nav>
+</header>
+
+<!-- Home -->
+<div class="hero" id="home">
+    <div class="hero-content">
+        <h1>Flowers Make Life Beautiful</h1>
+        <p>
+            Bring happiness and love into every moment
+            with our beautiful fresh flowers and handmade bouquets.
+        </p>
+        <a href="#flowers" class="btn">Explore Flowers</a>
+    </div>
+</div>
+
+<!-- Flower Collection -->
+<section id="flowers">
+    <h2 class="section-title">Our Beautiful Collection</h2>
+    <p class="subtitle">Fresh flowers for every special occasion 🌷</p>
+
+    <div class="products">
+
+        <div class="card">
+            <img src="red rose.jpg" alt="Red Roses">
+            <h3>Red Rose Bouquet</h3>
+            <p>Express your love with beautiful red roses.</p>
+            <p class="price">₹499</p>
+        </div>
+
+        <div class="card">
+            <img src="pink flower.jpg" alt="Pink Flowers">
+            <h3>Pink Flower Bouquet</h3>
+            <p>A lovely gift for your loved ones.</p>
+            <p class="price">₹599</p>
+        </div>
+
+        <div class="card">
+            <img src="sunflower.jpg" alt="Sunflowers">
+            <h3>Sunflower Bouquet</h3>
+            <p>Brighten someone's day with sunshine.</p>
+            <p class="price">₹399</p>
+        </div>
+
+        <div class="card">
+            <img src="white flower.jpg" alt="White Flowers">
+            <h3>White Flower Bouquet</h3>
+            <p>Elegant flowers for every occasion.</p>
+            <p class="price">₹699</p>
+        </div>
+
+    </div>
+</section>
+
+<!-- About -->
+<section class="about" id="about">
+    <h2 class="section-title">About Our Flower Shop</h2>
+    <p>
+        Welcome to Bloom & Blossom! We believe that flowers are
+        the language of love and happiness. Our shop offers
+        beautiful, fresh and handpicked flowers for birthdays,
+        weddings, anniversaries and all your special moments.
+        Make every day special with our lovely flower collection.
+    </p>
+</section>
+
+<!-- Services -->
+<section id="services">
+    <h2 class="section-title">Our Services</h2>
+    <p class="subtitle">We make your special moments more beautiful.</p>
+
+    <div class="services">
+        <div class="service">
+            <span>💐</span>
+            <h3>Fresh Bouquets</h3>
+            <p>Beautiful handmade flower arrangements.</p>
+        </div>
+
+        <div class="service">
+            <span>🎁</span>
+            <h3>Gift Wrapping</h3>
+            <p>Special packaging for your loved ones.</p>
+        </div>
+
+        <div class="service">
+            <span>🚚</span>
+            <h3>Home Delivery</h3>
+            <p>Fresh flowers delivered to your doorstep.</p>
+        </div>
+    </div>
+</section>
+
+<!-- Contact -->
+<section class="contact" id="contact">
+    <h2 class="section-title">Contact Us</h2>
+    <p>Have a special flower order? Get in touch with us!</p>
+    <p>📍 Address: Your City, India</p>
+    <p>📞 Phone: +91 82******7</p>
+    <p>📧 Email: bloomandblossom@gmail.com</p>
+    <br>
+    <a href="mailto:bloomandblossom@gmail.com" class="btn">
+        Send Enquiry
+    </a>
+</section>
+
+<!-- Footer -->
+<footer>
+    <p>🌸 Bloom & Blossom - Flower Shop 🌸</p>
+    <p>Made with ❤️ for flower lovers</p>
+    <p>© 2026 All Rights Reserved</p>
+</footer>
+
+</body>
+</html>
